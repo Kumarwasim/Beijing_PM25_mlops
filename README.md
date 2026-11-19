@@ -19,3 +19,7 @@ Practicals 01-05: work produced locally, if completed.
 Practical 06: Git version control.
 This README documents the goal and project organization for another student or future collaborator. Only
 describe work as completed if it has actually been run and verified on your computer.
+
+## Reproducibility
+Git records code and documentation history.
+DVC will later track datasets and model artifacts.
