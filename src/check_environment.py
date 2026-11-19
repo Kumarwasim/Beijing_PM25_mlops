@@ -1,0 +1,28 @@
+from pathlib import Path
+import sys
+import pandas as pd
+import numpy as np
+import sklearn
+
+print("Mlops environment verification")
+
+print("python", sys.version.split()[0])
+print("pandas", pd.__version__)
+print("numpyu:", np.__version__)
+print("sklearn", sklearn.__version__)
+
+project_root = Path(__file__).resolve().parent.parent
+
+folders = [
+    "data/raw",
+    "data/processed",
+    "src",
+    "models",
+    "notebooks",
+    "reports",
+    "tests"
+]
+
+for folder in folders:
+    path = project_root /folder
+    print(folder, "ok" if path.is_dir() else "missing")
