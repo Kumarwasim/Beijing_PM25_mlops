@@ -8,7 +8,7 @@ __pycache__/
 .env.*
 !.env.example
 # Large data and generated model artifacts
-# data/raw/
+data/raw/
 data/processed/
 models/
 # Generated reports and editor settings
